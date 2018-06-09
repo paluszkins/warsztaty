@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="https://formspree.io/m.magdalena.pal@gmail.com" method="POST" autocomplete>
+       <h1>Zapisy na szkolenie</h1>
+       <h2>Wypełnij formularz</h2>
+        <label>Imię <br><input type="text" placeholder="Imię"></label><br><br>
+        <label>Nazwisko <br><input type="text" placeholder="Nazwisko"></label><br><br>
+        <label>Adres email <br><input type="email" placeholder="Email"></label><br><br>
+        <label>Numer telefonu <br><input type="text" placeholder="Numer telefonu"></label><br><br>
+        <label>Wybierz miasto <br><select name="cities" tabindex="2">
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select></label><br><br>
+        <div>Wybierz płeć <br></div>
+        <label><input type="radio" name="gender">Kobieta</label><br>
+        <label><input type="radio" name="gender">Mężczyzna</label><br><br>
+        <label><input type="checkbox" name="agereement" required>Wyrażam zgodę na przetwarzanie danych osobowych</label><br><br>
+        <label>Wiadomość<br><textarea name="message" cols="50" rows="10" placeholder="Wiadomość"></textarea></label><br><br>
+        <input type="submit" value="send">
+    </form>
+</body>
+</html>
