@@ -222,7 +222,7 @@ figcaption {
 
 .photo1 {
     background-image: url(../img/team/man-1.jpg);
-    
+    background-size: 130%;
 }
 
 .photo2 {
@@ -231,6 +231,8 @@ figcaption {
 
 .photo3 {
     background-image: url(../img/team/woman-1.jpg);
+    background-size: 145%;
+    
 }
 
 .icons-media {

@@ -28,4 +28,12 @@ $(links).on("click", function(e){
     }, scrollTime)
 });
 
+//przejście do services ze strony głównej
+
+$(".main-btn").click(function(e){
+    e.preventDefault();
+    $("html, body").animate({
+        scrollTop: $("#services").offset().top - 50
+    }, 400)
+})
 
