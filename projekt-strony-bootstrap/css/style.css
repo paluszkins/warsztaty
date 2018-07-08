@@ -1,0 +1,128 @@
+body {
+    font-family: RobotoSlab, sans-serif;
+    color: #777777;
+    position: relative;
+}
+
+header {
+    background-image: url(../img/header/pictures_on_the_wall.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.maska-header {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 10;
+}
+
+#main-nav .nav-link, #main-nav .navbar-brand {
+    color: white;
+}
+
+.tekst-header {
+    position: absolute;
+    font-family: Montserrat, sans-serif;
+    font-size: 5rem;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    z-index: 20;
+    top: 50%;    
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.ha1, .navbar-brand {
+    font-style: italic;
+}
+
+.ha2{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.btn {
+    background-color: #0ed8d6;
+    height: 50px;
+    width: 150px;
+}
+
+.btn:hover {
+    color: #0ed8d6;
+    background-color: white;
+}
+
+#main-nav .nav-link:hover {
+    color: #0ed8d6;
+}
+
+/*section*/
+
+.main-item {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+p {
+    font-style: italic;
+}
+.circle {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background-color: #0ed8d6;
+    border-radius: 50px;
+    position: relative;
+    margin: auto;
+    color: white;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.fas {
+    font-size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    margin-bottom: 150px;
+}
+
+.circle:hover {
+    background-color: white;
+    color: #0ed8d6;
+    transform: rotate(360deg);
+    border: 1px solid #0ed8d6;
+}
+
+img {
+    padding: 20px;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+}
+h4 {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+figcaption {
+    margin: 0;
+    text-align: center;
+}
+
+#portfolio {
+    background-color: #f7f7f7;
+}
