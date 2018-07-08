@@ -1,8 +1,6 @@
 'use strict';
 
-//const links =$("a:not([href='#'])");
-//const body = $("body");
-//const scrollTime = 600;
+//obsługa scrolla
 
 function scrollWindow() {
     'use strict';
@@ -14,3 +12,20 @@ function scrollWindow() {
 }
 
 $(window).on("scroll", scrollWindow);
+
+
+//obsługa przejścia
+
+const links =$("a:not([href='#'])");
+const body = $("body");
+const scrollTime = 500;
+
+$(links).on("click", function(e){
+    e.preventDefault();
+    console.log(this.hash);
+    $("html, body").animate({
+        scrollTop: $(this.hash).offset().top - 50
+    }, scrollTime)
+});
+
+
