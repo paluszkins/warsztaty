@@ -12,7 +12,6 @@ header {
     position: relative;
 }
 
-
 .maska-header {
     height: 100vh;
     width: 100vw;
@@ -63,11 +62,14 @@ header {
     color: #0ed8d6;
 }
 
-/*section*/
+/*services*/
 
 .main-item {
     font-size: 2rem;
     font-weight: 700;
+}
+
+#services {
     margin-top: 50px;
 }
 
@@ -114,7 +116,8 @@ h4 {
 
 #portfolio {
     background-color: #f7f7f7;
-    padding-top: 5px;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .portfolio-wrapper {
@@ -130,6 +133,7 @@ h4 {
     background-position: center;
     height: 100%;
     width: 100%;
+    transition: all 0.3s ease-out;
     
 }
 
@@ -173,6 +177,9 @@ figcaption {
     width: 100%;
     z-index: 10;
     opacity: 0;
+    transition: all 0.3s ease-out;
+    left: 0;
+    top: 0;
 }
 
 .fa-plus {
@@ -182,9 +189,76 @@ figcaption {
 
 .portfolio-wrapper:hover .portfolio-mask, .portfolio-wrapper:hover .portfolio-image {
     transform: scale(1.5);
-    transition: all 0.5s ease-out;
     background-color:  rgba(8, 177, 219, 0.6);
     opacity: 1;
+/*    font-size: 3rem;*/
 }
 
 
+/*about*/
+#about {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.photo-about {
+    height: 250px;
+    width: 250px;
+    background-color: fuchsia;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.photo1 {
+    background-image: url(../img/team/man-1.jpg);
+    
+}
+
+.photo2 {
+    background-image: url(../img/team/man-2.jpg);
+}
+
+.photo3 {
+    background-image: url(../img/team/woman-1.jpg);
+}
+
+.icons-media {
+    display: inline-block;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    background-color: #777777;
+    border-radius: 50%;
+    position: relative;
+}
+
+.fab {
+    z-index: 10;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icons-media:hover {
+    background-color: #0ed8d6;
+}
+
+/*contact us*/
+
+.maska-mapa {
+    background-image: url(../img/footer/world-map.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.text-contact {
+    padding-top: 20px;
+}
